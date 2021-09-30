@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.intro {
+    margin-top: 5rem;
+}
+
+.intro__inner {
+    display: flex;
+    background: url('../images/intro/symbols.png') right bottom no-repeat;
+    border-bottom: 1px solid rgba(@gray, 30%);
+
+    padding-top: 6.6rem;
+    padding-bottom: 8rem;
+
+    position: relative;
+
+    @media @tablet {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+
+        background-size: 420px auto;
+    }
+
+    @media @mobile {
+        background-size: 380px auto;
+        padding-top: 3rem;
+    }
+}
+
+.intro__content {
+    width: 50%;
+    
+    @media @mobile {
+        width: 60%;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+}
+
+.intro__subtitle {
+    font-size: 2.13rem;
+    color: @black;
+
+    font-weight: 200;
+
+    @media @tablet {
+        font-size: 1.5rem;
+    }
+}
+
+.intro__title {
+    font-size: 3rem;
+    color: @black;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+    @media @tablet {
+        font-size: 2rem;
+    }
+}
+
+.intro__text {
+    font-size: 1.2rem;
+    color: @gray;
+
+    margin-bottom: 20px;
+}
+
+.intro__photo {
+    position: absolute;
+
+    bottom: -1px;
+    right: 75px;
+    z-index: 1;
+
+    @media @tablet {
+        width: 300px;
+    }
+
+    
+    @media @mobile {
+        width: 300px;
+        right: 5px;
+    }
+
+    @media @mobile-sm {
+        display: none;
+    }
+}
